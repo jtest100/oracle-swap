@@ -44,6 +44,7 @@ npm run start
 ## Start/Develop the Smart Contract
 ### Installation
 ```
+cd contracts
 forge install foundry-rs/forge-std --no-git --no-commit
 forge install OpenZeppelin/openzeppelin-contracts@v4.8.1 --no-git --no-commit
 npm install

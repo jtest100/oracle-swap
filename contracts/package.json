@@ -1,0 +1,23 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-abi": "forge inspect OracleSwap abi > ../app/src/abi/OracleSwapAbi.json",
+    "topic-event": "cast sig-event \"Event(string)\"",
+    "topic-deposit": "cast sig-event \"Deposit(address, uint256)\"",
+    "topic-withdraw": "cast sig-event \"Withdraw(address, uint256)\"",
+    "get-contract-balance": "cast balance 0x959922bE3CAee4b8Cd9a407cc3ac1C251C2007B1 -r \"http://localhost:8545\" -e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pythnetwork/pyth-sdk-solidity": "^3.0.0"
+  }
+}
